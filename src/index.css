@@ -1,0 +1,78 @@
+:root {
+  --tg-theme-bg-color: #efeff3;
+  --tg-theme-button-color: #63d0f9;
+  --tg-theme-button-text-color: black;
+}
+
+.App {
+  height: 100vh;
+  background-color: var(--tg-theme-bg-color);
+  color: var(--tg-theme-text-color);
+}
+
+.Container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.Button {
+  width: 100%;
+  padding: 10px 20px;
+  display: inline-block;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: var(--tg-theme-button-color);
+  color: var(--tg-theme-button-text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.Button:hover {
+  background-color: var(--tg-theme-hover-color);
+  color: var(--tg-theme-hover-text-color);
+}
+
+.Disabled {
+  filter: brightness(50%);
+  cursor: initial;
+}
+
+.Button.Active:hover {
+  filter: brightness(20px);
+}
+
+.Hint {
+  color: var(--tg-theme-hint-color);
+}
+
+.Card {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --tg-theme-bg-color: #d917e3;
+    --tg-theme-text-color: #fff;
+    --tg-theme-button-color: #fb32fb;
+    --tg-theme-button-text-color: #fff;
+  }
+
+  .Card {
+    background-color: var(--tg-theme-bg-color);
+    filter: brightness(165%);
+  }
+
+  .CounterValue {
+    border-radius: 16px;
+    color: white;
+    padding: 10px;
+  }
+}
