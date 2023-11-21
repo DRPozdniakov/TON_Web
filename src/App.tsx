@@ -16,42 +16,79 @@ function App() {
         <TonConnectButton />
         <div className="inner">
           <div className="item">
+            <div className="content-container">
               <img src="1.jpg" alt="" className="img" />
-              <button className="btn" id="btn1">
-                Add
-              </button>
+                <div className="text-container">
+                  <p>229Kč</p>
+                </div>
+            </div>
+            <button className="btn" id="btn1">
+              Add
+            </button>
           </div>
+
           <div className="item">
+            <div className="content-container">
               <img src="2.jpg" alt="" className="img" />
-              <button className="btn" id="btn2">
-                Add
-              </button>
+                <div className="text-container">
+                  <p>229Kč</p>
+                </div>
             </div>
-            <div className="item">
-              <img src="3.jpg" alt="" className="img" />
-              <button className="btn" id="btn3">
-                Add
-              </button>
-            </div>
-            <div className="item">
-              <img src="4.jpg" alt="" className="img" />
-              <button className="btn" id="btn4">
-                Add
-              </button>
-            </div>
-            <div className="item">
-              <img src="5.jpg" alt="" className="img" />
-              <button className="btn" id="btn5">
-                Add
-              </button>
-            </div>
-            <div className="item">
-              <img src="6.jpg" alt="" className="img" />
-              <button className="btn" id="btn6">
-                Add
-              </button>
-            </div>
+            <button className="btn" id="btn1">
+              Add
+            </button>
           </div>
+
+          <div className="item">
+            <div className="content-container">
+              <img src="3.jpg" alt="" className="img" />
+                <div className="text-container">
+                  <p>329Kč</p>
+                </div>
+            </div>
+            <button className="btn" id="btn1">
+              Add
+            </button>
+          </div>
+
+          <div className="item">
+            <div className="content-container">
+              <img src="4.jpg" alt="" className="img" />
+                <div className="text-container">
+                  <p>429Kč</p>
+                </div>
+            </div>
+            <button className="btn" id="btn1">
+              Add
+            </button>
+          </div>
+
+          <div className="item">
+            <div className="content-container">
+              <img src="5.jpg" alt="" className="img" />
+                <div className="text-container">
+                  <p>529Kč</p>
+                </div>
+            </div>
+            <button className="btn" id="btn1">
+              Add
+            </button>
+          </div>
+
+          <div className="item">
+            <div className="content-container">
+              <img src="6.jpg" alt="" className="img" />
+                <div className="text-container">
+                  <p>629Kč</p>
+                </div>
+            </div>
+            <button className="btn" id="btn1">
+              Add
+            </button>
+          </div>
+        </div>
+        
+        <div className="usercard" id="usercard"></div>
         <a
           className={`Button ${connected ? 'Active' : 'Disabled'}`}
           onClick={() => {
