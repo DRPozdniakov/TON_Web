@@ -4,20 +4,57 @@
   --tg-theme-button-text-color: black;
 }
 
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	color: var(--tg-theme-text-color);
+	background: var(--tg-theme-bg-color);
+}
+
+.container {
+	max-width: 390px;
+}
+
+.inner {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 200px 200px 200px;
+ 
+}
+
+.img {
+	width: 150px;
+}
+
+.item {
+	text-align: center;
+}
+
+.btn {
+	display: inline-block;
+	padding: 10px 20px;
+	border: none;
+	background: rgb(248, 168, 24);
+	border-radius: 10px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	transition: background .2s linear;
+}
+
+.btn:hover {
+	background: lightgreen;
+}
+
+.usercard {
+	text-align: center;
+}
+
 .App {
   height: 100vh;
   background-color: var(--tg-theme-bg-color);
   color: var(--tg-theme-text-color);
-}
-
-.Container {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
 }
 
 .Button {
@@ -46,33 +83,3 @@
   filter: brightness(20px);
 }
 
-.Hint {
-  color: var(--tg-theme-hint-color);
-}
-
-.Card {
-  width: 100%;
-  padding: 10px 20px;
-  border-radius: 20px;
-  background-color: white;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --tg-theme-bg-color: #d917e3;
-    --tg-theme-text-color: #fff;
-    --tg-theme-button-color: #fb32fb;
-    --tg-theme-button-text-color: #fff;
-  }
-
-  .Card {
-    background-color: var(--tg-theme-bg-color);
-    filter: brightness(165%);
-  }
-
-  .CounterValue {
-    border-radius: 16px;
-    color: white;
-    padding: 10px;
-  }
-}

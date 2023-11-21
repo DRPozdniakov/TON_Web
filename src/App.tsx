@@ -9,19 +9,46 @@ function App() {
 
   return (
     <div className="App">
-      <div className='Container'>
+      <div className='container'>
         <TonConnectButton />
-
-        <div className='Card'>
-          <b>Counter Address</b>
-          <div className='Hint'>{address?.slice(0,100)}</div>
-        </div>  
-        
-        <div className='Card'>
-          <b>Counter Value</b>
-          <div>{value ?? 'Loading...'}</div>
-        </div>
-
+        <div className="inner">
+          <div className="item">
+              <img src="1.jpg" alt="" className="img" />
+              <button className="btn" id="btn1">
+                Add
+              </button>
+          </div>
+          <div className="item">
+              <img src="2.jpg" alt="" className="img" />
+              <button className="btn" id="btn2">
+                Add
+              </button>
+            </div>
+            <div className="item">
+              <img src="3.jpg" alt="" className="img" />
+              <button className="btn" id="btn3">
+                Add
+              </button>
+            </div>
+            <div className="item">
+              <img src="4.jpg" alt="" className="img" />
+              <button className="btn" id="btn4">
+                Add
+              </button>
+            </div>
+            <div className="item">
+              <img src="5.jpg" alt="" className="img" />
+              <button className="btn" id="btn5">
+                Add
+              </button>
+            </div>
+            <div className="item">
+              <img src="6.jpg" alt="" className="img" />
+              <button className="btn" id="btn6">
+                Add
+              </button>
+            </div>
+          </div>
         <a
           className={`Button ${connected ? 'Active' : 'Disabled'}`}
           onClick={() => {
