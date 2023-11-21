@@ -7,6 +7,9 @@ function App() {
   const { connected } = useTonConnect();
   const { value,address,sendIncrement } = useCounterContract();
 
+  console.log(address);
+  console.log(value);
+
   return (
     <div className="App">
       <div className='container'>
