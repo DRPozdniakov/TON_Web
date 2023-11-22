@@ -16,11 +16,13 @@
     "@ton/ton": "^13.9.0",
     "@tonconnect/ui-react": "^2.0.0-beta.6",
     "@twa-dev/sdk": "^6.9.1",
+    "node-telegram-bot-api": "^0.64.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "vite-plugin-polyfills": "^0.0.0"
   },
   "devDependencies": {
+    "@types/node-telegram-bot-api": "^0.63.3",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
